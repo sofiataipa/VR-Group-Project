@@ -145,16 +145,16 @@ public class AudioManager : MonoBehaviour
         float t = 0;
         while (t <= fadeDuration)
         {
-            float val = Mathf.Lerp(0, 1, t / fadeDuration);
+            float val = Mathf.Lerp(0, 0.5f, t / fadeDuration);
             FadeIn.volume = val; // fade in this one
-            FadeOut.volume = 1 - val;//inverse or opposite of the fadeIn source
+            FadeOut.volume = 0.5f - val;//inverse or opposite of the fadeIn source
             t += Time.deltaTime;
             fadeStart = val;//keep track of where we are in the fade
             yield return null;
         }
 
         //just so it's exactly 1 & 0 at the end
-        FadeIn.volume = 1;
+        FadeIn.volume = 0.5f;
         FadeOut.volume = 0;
 
         FadeOut.Stop();

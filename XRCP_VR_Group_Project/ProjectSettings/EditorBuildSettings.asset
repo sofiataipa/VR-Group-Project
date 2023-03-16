@@ -5,17 +5,26 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Activities_XRCP/GroupProjectTemplate/Scenes/0_StoryExampleScene.unity
     guid: f05aece6d85e66c49af9e0f2785b76da
-  - enabled: 1
+  - enabled: 0
     path: Assets/Activities_XRCP/GroupProjectTemplate/Scenes/1_StoryExampleScene.unity
     guid: 29144926b3388de42a284033db9c82e6
-  - enabled: 1
+  - enabled: 0
     path: Assets/Activities_XRCP/Sofia/Scenes/ExampleTeamMateScene.unity
     guid: 9bd2fc838bc534a47a5272cd0574a072
+  - enabled: 1
+    path: Assets/Activities_XRCP/Sofia/Scenes/HomeworkScene.unity
+    guid: 566b48d2bd7344475bfc852dd0b09e0f
+  - enabled: 0
+    path: Assets/Activities_XRCP/NavigationExamples/Scenes/Navigation_All_XRCP.unity
+    guid: daec38b2fb35dc746800988953ff8d8c
+  - enabled: 0
+    path: Assets/Activities_XRCP/GestureAndAffordances/Scenes/GrabActions.unity
+    guid: 3add2a0fc95ab914392360be5dfa1de6
   m_configObjects:
-    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: f3d36b094c7e90a48bfeecc8253553a0,
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: ee82cc338b24f451095d8a08ee14394e,
       type: 2}
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: df8aae105e263a5468e482f51411abfe,
       type: 2}

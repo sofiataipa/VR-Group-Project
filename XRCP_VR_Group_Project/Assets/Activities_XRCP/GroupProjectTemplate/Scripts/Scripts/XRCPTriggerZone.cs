@@ -6,7 +6,7 @@ using UnityEngine.Events;
 public class XRCPTriggerZone : MonoBehaviour
 {
     public string playerTag = "Player";
-    private bool playerInZone;
+    //private bool playerInZone;
 
     public UnityEvent OnTriggerZoneEntered = new UnityEvent();
     public UnityEvent OnTriggerZoneExited = new UnityEvent();
@@ -24,7 +24,7 @@ public class XRCPTriggerZone : MonoBehaviour
         Debug.Log(other);
         if (OnTriggerZoneEntered != null && CheckCollisionObject(other.gameObject))
         {
-            playerInZone = true;
+            //playerInZone = true;
 
             OnTriggerZoneEntered.Invoke(); 
         }
@@ -34,7 +34,7 @@ public class XRCPTriggerZone : MonoBehaviour
         Debug.Log(other);
         if (OnTriggerZoneExited != null && CheckCollisionObject(other.gameObject))
         {
-            playerInZone = false;
+          //  playerInZone = false;
 
             OnTriggerZoneExited.Invoke();
         }
